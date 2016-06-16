@@ -40,7 +40,7 @@ Node<Planet> VenusNode(Venus);
 int main(int argc, char *argv[])
 {
     index=0;
-
+/*Brutforce:
     Earth->changeImagePath("C:\\Users\\oem\\Desktop\\Programowanie\\Dokumenty C++\\Planet\\PlanetApp\\Pictures\\Earth.jpg");
     Jupiter->changeImagePath("C:\\Users\\oem\\Desktop\\Programowanie\\Dokumenty C++\\Planet\\PlanetApp\\Pictures\\Jupiter.jpg");
     Mars->changeImagePath("C:\\Users\\oem\\Desktop\\Programowanie\\Dokumenty C++\\Planet\\PlanetApp\\Pictures\\Mars.jpg");
@@ -49,6 +49,17 @@ int main(int argc, char *argv[])
     Mercury->changeImagePath("C:\\Users\\oem\\Desktop\\Programowanie\\Dokumenty C++\\Planet\\PlanetApp\\Pictures\\Mercury.jpg");
     Saturn->changeImagePath("C:\\Users\\oem\\Desktop\\Programowanie\\Dokumenty C++\\Planet\\PlanetApp\\Pictures\\Saturn.jpg");
     Venus->changeImagePath("C:\\Users\\oem\\Desktop\\Programowanie\\Dokumenty C++\\Planet\\PlanetApp\\Pictures\\Venus.jpg");
+*/
+    //Smart way:
+    Earth->changeImagePath(":/Pictures/Earth.jpg");
+    Jupiter->changeImagePath(":/Pictures/Jupiter.jpg");
+    Mars->changeImagePath(":/Pictures/Mars.jpg");
+    Neptun->changeImagePath(":/Pictures/Neptun.jpg");
+    Uran->changeImagePath(":/Pictures/Uran.jpg");
+    Mercury->changeImagePath(":/Pictures/Mercury.jpg");
+    Saturn->changeImagePath(":/Pictures/Saturn.jpg");
+    Venus->changeImagePath(":/Pictures/Venus.jpg");
+
 
     L.add( &EarthNode, 0);
     L.add( &JupiterNode, 1);
