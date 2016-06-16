@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>402</width>
+    <height>339</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="label_pic">
+    <property name="geometry">
+     <rect>
+      <x>36</x>
+      <y>22</y>
+      <width>351</width>
+      <height>201</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>52</x>
+      <y>250</y>
+      <width>281</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>See Planets</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>402</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <widget class="QMenu" name="menuAdd_Planet">
+     <property name="title">
+      <string>Add Planet...</string>
+     </property>
+     <addaction name="actionEarth"/>
+     <addaction name="actionJupiter"/>
+     <addaction name="actionMars"/>
+     <addaction name="actionMercury"/>
+     <addaction name="actionNeptun"/>
+     <addaction name="actionSaturn"/>
+     <addaction name="actionVenus"/>
+     <addaction name="actionUran"/>
+    </widget>
+    <addaction name="menuAdd_Planet"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <addaction name="menuFile"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </action>
+  <action name="actionEarth">
+   <property name="text">
+    <string>Earth</string>
+   </property>
+  </action>
+  <action name="actionJupiter">
+   <property name="text">
+    <string>Jupiter</string>
+   </property>
+  </action>
+  <action name="actionMars">
+   <property name="text">
+    <string>Mars</string>
+   </property>
+  </action>
+  <action name="actionNeptun">
+   <property name="text">
+    <string>Neptun</string>
+   </property>
+  </action>
+  <action name="actionUran">
+   <property name="text">
+    <string>Uran</string>
+   </property>
+  </action>
+  <action name="actionSaturn">
+   <property name="text">
+    <string>Saturn</string>
+   </property>
+  </action>
+  <action name="actionMercury">
+   <property name="text">
+    <string>Mercury</string>
+   </property>
+  </action>
+  <action name="actionVenus">
+   <property name="text">
+    <string>Venus</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>200</x>
+     <y>169</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
